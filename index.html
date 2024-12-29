@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="img/pokeball.png">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body onload="init()">
+    <header>
+        
+        <div class="header home">
+          <img class="detail-bg" src="img/pokedex.svg">
+          <img class="detail-bg-left" src="img/pokedex.svg">
+            <div class="logo-wrapper">
+            <img src="img/pokemon.png">
+        </div>
+        <div class="search-wrapper">
+            <div class="search-wrap">
+              <img
+                src="./img/search.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+              <input
+                type="text"
+                class="search-input"
+                id="searchInput"
+              />
+              
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="load-more-pokemons" id="morePokemons"><button onclick="prepareURL()">load more Pokemons</button></div>
+    </header>
+    <div id="Maincontainer"></div>
+    
+   
+
+    <div id="big-pokemon-cards" class="d-none"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="html_templates.js"></script>
+    <script src="chart.js"></script>
+    <link rel="stylesheet" href="pokemonColors.css">
+</body>
+</html>
